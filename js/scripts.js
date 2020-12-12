@@ -8,7 +8,7 @@
 
     $(document).ready(() => {
 
-        // if(location.hostname == '') {
+        if(location.hostname == '') {
     
             var connect = ""
             connect += "<div class='container'>"
@@ -87,13 +87,13 @@
             nav+= "    </div>"
             nav+= "</nav>"
             $("#nav").append(nav)
-        // } else {
-        //     if($("#footer").is(':empty')) {
-        //         $("#contact").load('connect.html')
-        //         $('#footer').load('footer.html')
-        //         $("#nav").load('nav.html')
-        //     }
-        // }
+        } else {
+            if($("#footer").is(':empty')) {
+                $("#contact").load('contact.html')
+                $('#footer').load('footer.html')
+                $("#nav").load('nav.html')
+            }
+        }
     })
 
 
