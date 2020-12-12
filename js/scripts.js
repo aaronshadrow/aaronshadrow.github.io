@@ -87,9 +87,11 @@
         nav+= "</nav>"
         $("#nav").append(nav)
     } else {
-        $("#contact").load('connect.html')
-        $('#footer').load('footer.html')
-        $("#nav").load('nav.html')
+        if($("#footer").is(':empty')) {
+            $("#contact").load('connect.html')
+            $('#footer').load('footer.html')
+            $("#nav").load('nav.html')
+        }
     }
 
 
