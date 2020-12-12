@@ -64,6 +64,8 @@
         $('#footer').append(footer)
         
         var nav = "<!-- Navigation-->"
+        nav+= "<meta property='og:image content='https://i.scdn.co/image/df9271af68832f9213ad76aca4ede3d4858f10b7' />"
+        nav+= "<meta property='og:description' content='Aaron Shadrow is an LA-based musician who is going to think of a great description to put in this box.' />"
         nav+= "<nav class='navbar navbar-expand-lg navbar-light fixed-top' id='mainNav'>"
         nav+= "    <div class='container'>"
         nav+= "        <!--<a class='navbar-brand js-scroll-trigger' href='#page-top'>Start Bootstrap</a>-->"
