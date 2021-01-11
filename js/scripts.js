@@ -57,7 +57,7 @@
             footer += "<meta property='og:image content='https://i.scdn.co/image/df9271af68832f9213ad76aca4ede3d4858f10b7' />"
             footer += "<meta property='og:description' content='Aaron Shadrow is an LA-based musician who is going to think of a great description to put in this box.' />"
             footer += "<footer class='footer bg-black small text-center text-white-50'>"
-            footer += "<div class='container'>Copyright © Aaron Shadrow 2020</div>"
+            footer += "<div class='container'>Copyright © Aaron Shadrow 2021</div>"
             footer += "</footer>"
             footer += "<!-- Bootstrap core JS-->"
             footer += "<!--<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>-->"

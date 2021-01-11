@@ -2,7 +2,8 @@
 <html lang="en">
     <header>
         <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
-        <meta name='description' content='' />
+        <meta property='og:image' content='https://i.scdn.co/image/df9271af68832f9213ad76aca4ede3d4858f10b7' />
+        <meta property='og:description' content='Aaron Shadrow is an LA-based musician who is going to think of a great description to put in this box.' />
         <meta name='author' content='' />
         <title>Aaron Shadrow - Teaching</title>
         <link rel='icon' type='image/x-icon' href='assets/img/favicon.ico' />
@@ -13,61 +14,238 @@
         <link href='https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i' rel='stylesheet' />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href='css/styles.css' rel='stylesheet' />
+        <style>
+            * {box-sizing: border-box}
+            body {font-family: Verdana, sans-serif; margin:0}
+            .instructionSlides {display: none}
+            img {vertical-align: middle;}
+            
+            /* Slideshow container */
+            .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+            
+            /* Next & previous buttons */
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                /* color: white; */
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                background-color: rgba(240,240,240,0.8);
+            }
+            
+            /* Position the "next button" to the right */
+            .next {
+                right: 0px;
+                border-radius: 3px 0 0 3px;
+            }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover, .next:hover {
+                background-color: rgba(0,0,0,0.8);
+            }
+            
+            /* Caption text */
+            .text {
+                color: #f2f2f2;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+            
+            /* Number text (1/3 etc) */
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+            
+            /* The dots/bullets/indicators */
+            .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+            
+            .active, .dot:hover {
+                background-color: #717171;
+            }
+            
+            /* Fading animation */
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+
+            .fade:not(.show) {
+                opacity: 1 !important;
+            }
+            
+            @-webkit-keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+            
+            @keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+            }
+            
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+              .prev, .next,.text {font-size: 11px}
+            }
+        </style>
     </header>
     <body id="page-top">
         <!--Navigation-->
-        <div id="nav">
-            <title>Aaron Shadrow - Teaching</title>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Aaron Shadrow</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul id="nav" class="navbar-nav ml-auto">
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <!-- Masthead-->
         <header class="masthead">
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-center">
                     <h1 class="mx-auto my-0 text-uppercase">Teaching</h1>
-                    <h2 class="text-white-50 mx-auto mt-2 mb-5">For all your music needs.</h2>
+                    <!-- <h2 class="text-white-50 mx-auto mt-2 mb-5">For all your music needs.</h2> -->
                     <!-- <a class="btn btn-primary js-scroll-trigger" href="#about">Get Started</a> -->
                 </div>
             </div>
         </header>
         <!-- About-->
-        <section class="about-section text-center" id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <h2 class="text-white mb-4">Built with Bootstrap 4</h2>
-                        <p class="text-white-50">
-                            Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-                            <a href="https://startbootstrap.com/theme/grayscale/">the preview page</a>
-                            . The theme is open source, and you can use it for any purpose, personal or commercial.
-                        </p>
-                    </div>
-                </div>
-                <img class="img-fluid" src="assets/img/ipad.png" alt="" />
-            </div>
-        </section>
+        <!-- <section class="about-section text-center" id="about">
+
+        </section> -->
         <!-- Projects-->
         <section class="projects-section bg-light" id="projects">
             <div class="container">
-                <!-- Featured Project Row-->
-                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="" /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <!-- <h4>Shoreline</h4> -->
-                            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+                <div class="row slideshow-container">
+                    
+                    <div class="instructionSlides fade">
+                        <div class="numbertext">1 / 8</div>
+                        <img src="assets\img\student_4.jpg" style="width:100%">
+                        <!-- <div class="text">Caption Three</div> -->
+                    </div>
+                    
+                    <div class="instructionSlides fade">
+                        <div class="numbertext">2 / 8</div>
+                        <img src="assets\img\student_5.jpg" style="width:100%">
+                        <!-- <div class="text">Caption Three</div>/ -->
+                    </div>
+                    
+                    <div class="instructionSlides fade">
+                      <div class="numbertext">3 / 8</div>
+                      <img src="assets\img\student_1.jpg" style="width:100%">
+                      <!-- <div class="text">Optional Caption</div> -->
+                    </div>
+                    
+                    <div class="instructionSlides fade">
+                        <div class="numbertext">4 / 8</div>
+                        <img src="assets\img\student_2.jpg" style="width:100%">
+                        <!-- <div class="text">Caption Two</div> -->
+                    </div>
+                    
+                    <div class="instructionSlides fade">
+                        <div class="numbertext">5 / 8</div>
+                        <img src="assets\img\student_3.jpg" style="width:100%">
+                        <!-- <div class="text">Caption Three</div> -->
+                    </div>
+                    
+                    <div class="instructionSlides fade">
+                        <div class="numbertext">6 / 8</div>
+                        <img src="assets\img\student_6.jpg" style="width:100%">
+                        <!-- <div class="text">Caption Three</div> -->
+                    </div>
+                    
+                    <div class="instructionSlides fade">
+                        <div class="numbertext">7 / 8</div>
+                        <img src="assets\img\student_7.jpg" style="width:100%">
+                        <!-- <div class="text">Caption Three</div> -->
+                    </div>
+                    
+                    <div class="instructionSlides fade">
+                        <div class="numbertext">8 / 8</div>
+                        <img src="assets\img\student_8.jpg" style="width:100%">
+                        <!-- <div class="text">Caption Three</div> -->
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                    <span class="dot" onclick="currentSlide(7)"></span> 
+                    <span class="dot" onclick="currentSlide(8)"></span> 
+                </div>
+                <br>
+                <!-- Project One Row-->
+                
+                <!-- <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                </div> -->
+                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                    <!-- <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="" /></div> -->
+                    <div class="col-lg-12">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left" style="padding-bottom: 0rem;">
+                                    <h3 class="text-white" style="text-align: center;">Testimonials</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- Project One Row-->
-                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="" /></div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Misty</h4>
-                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                    <p class="mb-0 text-white-50" style="font-style: italic;">
+                                        I started taking lessons with Aaron 6 months ago to learn music, improve my guitar playing and write better songs after not making much progress teaching myself using Youtube.
+                                        <br><br>Aaron explains music theory in a way that is easy to understand and tailored to the experience and knowledge of the student, providing you with visuals and useful tips for quick learning. He is a very supportive teacher, always pointing out your progress when you feel you haven’t made enough.
+                                        <br><br>My favorite thing about our lessons, however, is how versatile they are. From learning different techniques to play electric guitar, acoustic guitar and piano to refining song writing. Aaron helped me with the structure, chord progression and playing techniques of my songs. They sound so much better now! I’ve been using what he taught me ever since. I highly recommend Aaron to students of all levels and musical interests!
+                                    </p>
                                     <hr class="d-none d-lg-block mb-0 ml-0" />
+                                    <br>
+                                    <h5 class="text-white">Georgiana Sima</h5>
+                                    <h6 style="color: #64a19d">Guitar</h6>
                                 </div>
                             </div>
                         </div>
@@ -75,32 +253,23 @@
                 </div>
                 <!-- Project Two Row-->
                 <div class="row justify-content-center no-gutters">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="" /></div>
-                    <div class="col-lg-6 order-lg-first">
+                    <!-- <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="" /></div> -->
+                    <div class="col-lg-12 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Mountains</h4>
-                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                                    <p class="mb-0 text-white-50" style="text-align: left; font-style: italic;">
+                                        Aaron is hands down the best music teacher I’ve ever had, and I’ve had a lot of tuition over the years with various instruments and teachers. I’ve made more progress with Aaron in 9 months than I did with a previous teacher of three years. The lessons are really led by what you want to learn, but, as the expert, Aaron always has a suggestion for where to go next that will push you to the next level. His knowledge of music theory is astounding, but he makes it so accessible. I used to think I hated music theory but since learning with Aaron, I don’t feel that at all – now I’m watching YouTube videos on my own just because I’m interested!
+                                        <br><br>The other invaluable side to Aaron’s teaching is his ability to build your confidence in yourself. I’ve struggled for over a decade insecurity paralysis – I’ve wanted to write music but my fear of it being cliché or just bad has always blocked me. Aaron, with his patience, encouragement and empathy, has managed coax my creativity out and I’ve actually started writing music that I want to play for others. 
+                                        <br><br>If you’re considering music lessons, I urge you to get in touch with Aaron. He’s versatile, engaging, and I can tell feels genuine pride in my successes and progress. He’s also just a stellar guy and I always look forward to our lessons.”
+                                    </p>
                                     <hr class="d-none d-lg-block mb-0 mr-0" />
+                                    <br>
+                                    <h5 class="text-white">Emily Williamson</h5>
+                                    <h6 style="color: #64a19d">Guitar</h6>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Signup-->
-        <section class="signup-section" id="signup">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-                        <form class="form-inline d-flex">
-                            <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." />
-                            <button class="btn btn-primary mx-auto" type="submit">Subscribe</button>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -116,5 +285,38 @@
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js'></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("instructionSlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }    
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+            }
+        </script>
     </body>
 </html>
